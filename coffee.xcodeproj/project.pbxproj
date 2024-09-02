@@ -13,6 +13,8 @@
 		B35C58222C816A2600B73286 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B35C58212C816A2600B73286 /* Base */; };
 		B35C58242C816A2800B73286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B35C58232C816A2800B73286 /* Assets.xcassets */; };
 		B35C58272C816A2800B73286 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B35C58262C816A2800B73286 /* Base */; };
+		B35C58342C81737100B73286 /* coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35C58332C81737100B73286 /* coffee.swift */; };
+		B35C58362C817BAE00B73286 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = B35C58352C817BAE00B73286 /* menu.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B35C58232C816A2800B73286 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B35C58262C816A2800B73286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B35C58282C816A2800B73286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B35C58332C81737100B73286 /* coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coffee.swift; sourceTree = "<group>"; };
+		B35C58352C817BAE00B73286 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		B35C58192C816A2600B73286 /* coffee */ = {
 			isa = PBXGroup;
 			children = (
+				B35C58372C817BBB00B73286 /* Data */,
+				B35C58322C81735000B73286 /* Model */,
 				B35C581A2C816A2600B73286 /* AppDelegate.swift */,
 				B35C581C2C816A2600B73286 /* SceneDelegate.swift */,
 				B35C581E2C816A2600B73286 /* ViewController.swift */,
@@ -65,6 +71,22 @@
 				B35C58282C816A2800B73286 /* Info.plist */,
 			);
 			path = coffee;
+			sourceTree = "<group>";
+		};
+		B35C58322C81735000B73286 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B35C58332C81737100B73286 /* coffee.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B35C58372C817BBB00B73286 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B35C58352C817BAE00B73286 /* menu.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +149,7 @@
 			files = (
 				B35C58242C816A2800B73286 /* Assets.xcassets in Resources */,
 				B35C58272C816A2800B73286 /* Base in Resources */,
+				B35C58362C817BAE00B73286 /* menu.json in Resources */,
 				B35C58222C816A2600B73286 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +164,7 @@
 				B35C581F2C816A2600B73286 /* ViewController.swift in Sources */,
 				B35C581B2C816A2600B73286 /* AppDelegate.swift in Sources */,
 				B35C581D2C816A2600B73286 /* SceneDelegate.swift in Sources */,
+				B35C58342C81737100B73286 /* coffee.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
