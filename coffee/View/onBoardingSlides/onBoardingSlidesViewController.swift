@@ -29,9 +29,10 @@ class onBoardingSlidesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        slides.append(onBoardingSlide(image: #imageLiteral(resourceName: "no_queue.jpeg"), title: "No need to Stand in line", description: "With our app you can order without standing in line. Just relax in your seat and we will bring your order to you when it's ready."))
-        slides.append(onBoardingSlide(image: #imageLiteral(resourceName: "no_queue.jpeg"), title: "No need to Stand in line2", description: "With our app you can order without standing in line. Just relax in your seat and we will bring your order to you when it's ready."))
-        slides.append(onBoardingSlide(image: #imageLiteral(resourceName: "no_queue.jpeg"), title: "No need to Stand in line3", description: "With our app you can order without standing in line. Just relax in your seat and we will bring your order to you when it's ready."))
+        slides.append(onBoardingSlide(image: #imageLiteral(resourceName: "no_queue.jpeg"), title: "No need to Stand in line", description: "With our app you can order without standing in line. "))
+        slides.append(onBoardingSlide(image: #imageLiteral(resourceName: "cafe_table.jpeg"), title: "Order while relaxing", description: "Just relax in your seat and we will bring your order to you when it's ready."))
+
+        pageControl.numberOfPages = slides.count
         
         
         
@@ -39,7 +40,12 @@ class onBoardingSlidesViewController: UIViewController {
     
     @IBAction func nextButtonClicked(_ sender: UIButton) {
         if currentPage == slides.count - 1 {
-            print("Get started")
+            print("new page")
+            let scene = storyboard?.instantiateViewController(identifier: "loginview") as! LoginViewController
+            
+            scene.modalPresentationStyle = .fullScreen
+            scene.modalTransitionStyle = .flipHorizontal
+            present(scene, animated: true)
         }else {
             currentPage += 1
             let indexPath = IndexPath(item: currentPage, section: 0)
